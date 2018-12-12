@@ -1,0 +1,8 @@
+<li class="list-group-item" [ngStyle]="{backgroundColor : getColor()}">
+  <h4>Titre : {{ postTitle }}</h4>
+  <p id="date">{{ lastUpdate | date: 'short' }}</p>
+  <p>{{ postContent }}</p>
+  <button class="btn btn-success" (click)="onLike()">Like</button>
+  <button class="btn btn-danger" (click)="onDislike()">Dislike</button>
+  <p>like : {{ like }} | dislike : {{ unlike }}</p>
+</li>
